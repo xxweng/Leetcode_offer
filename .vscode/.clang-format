@@ -1,0 +1,8 @@
+UseTab: false
+IndentWidth: 4
+BreakBeforeBraces: Stroustrup 
+AllowShortIfStatementsOnASingleLine: false
+IndentCaseLabels: true
+ColumnLimit: 0
+Standard: Cpp11
+Cpp11BracedListStyle: true
