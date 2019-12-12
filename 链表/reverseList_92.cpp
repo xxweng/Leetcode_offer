@@ -24,13 +24,14 @@ public:
         {
             pre = pre->next;
         }
+        //cur为翻转部分前的那个节点。
         ListNode* cur = pre->next;
         for(int i = m; i < n; i++)
         {
-            ListNode* last = cur->next;
-            cur->next = last->next;
-            last->next = pre->next;
-            pre->next = last;
+            ListNode* last = cur->next; //要翻转部分的原始第一个节点
+            cur->next = last->next; //把要fan
+            last->next = pre->next; //
+            pre->next = last; //
         }
         
         return dummyNode->next;
